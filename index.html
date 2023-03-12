@@ -7,33 +7,69 @@
     <title>WebRTC Demo</title>
   </head>
   <body>
-    <h2>1. Start your Webcam</h2>
-    <div class="videos">
-      <span>
-        <h3>Local Stream</h3>
-        <video id="webcamVideo" autoplay playsinline></video>
-      </span>
-      <span>
-        <h3>Remote Stream</h3>
-        <video id="remoteVideo" autoplay playsinline></video>
-      </span>
+
+    <div class="roomDetailContainer">
+
+      <div class="head">
+
+          <div class="abc">
+                  <img src="/images/arrow.png" alt="" class="arrow_icon" />
+              <span>Hallway</span>
+          </div>
+          <div>
+              <img src="/images/akshat.jpeg" alt="" class="profile_img"/>
+          </div>
+      </div>
+
+      <div class="roomDetailCard">
+          <div class="xyz">
+            <span>
+              <img src="/images/akshat.jpeg" />
+              <video id="webcamVideo" autoplay playsinline></video>
+              <p>
+                <span>
+      
+                </span>
+                Akshat
+            </p>
+            </span>
+            <span>
+              <img src="/images/deepak.jpeg" />
+              <video id="remoteVideo" autoplay playsinline></video>
+              <p>
+                <span>
+      
+                </span>
+                Deepak
+            </p>
+            </span>
+          </div>
+      </div>
 
 
-    </div>
 
-    <button id="webcamButton">Start webcam</button>
-    <h2>2. Create a new Call</h2>
-    <button id="callButton" disabled>Create Call (offer)</button>
+      <div class="footer">
+          <button id="hangupButton" disabled>
+              <img src="/images/hand-peace.png" alt="" />
+              Leave Room
+          </button>
+          <div>
+            <input id="callInput" />
+            <button id="answerButton" >
+                  Add
+              </button>
+          <button id="callButton">
+                  <img src="/images/stopHandIcon.png" />
+          </button>
+          <button id="webcamButton">
+              Unmute
+          </button>
+          </div>
+      </div>
+  </div>
 
-    <h2>3. Join a Call</h2>
-    <p>Answer the call from a different browser window or device</p>
-    
-    <input id="callInput" />
-    <button id="answerButton" disabled>Answer</button>
 
-    <h2>4. Hangup</h2>
 
-    <button id="hangupButton" disabled>Hangup</button>
 
     <script type="module" src="/main.js"></script>
 
